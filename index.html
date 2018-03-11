@@ -98,7 +98,7 @@
             Укажите предполагаемые даты поездки,<br>
             и мы покажем вам лучшие предложения гостиниц в Седоне
           </p>
-          <span class="button">Поиск гостиницы в Седоне</span>
+          <button class="button-search-form" type="button">Поиск гостиницы в Седоне</button>
         </section>
         <section class="main-map">
           <h2 class="visually-hidden">Как добраться до Седоны</h2>
@@ -120,7 +120,7 @@
         </ul>
         <p class="footer-copyright">
           <span>Website by</span>
-          <a class="copyright-logo" href="https://htmlacademy.ru/intensive/htmlcss" target="_blank">
+          <a class="copyright-logo" href="https://htmlacademy.ru/intensive/htmlcss" target="_blank" aria-label="Интенсив Базовый HTML&CSS в HTML Академии">
             <img src="img/logo-htmlacademy.svg" alt="Логотип HTMLacademy" width="115" height="41">
           </a>
         </p>
@@ -128,7 +128,31 @@
 
       <section class="modal">
         <h2 class="visually-hidden">Форма поиска гостиницы</h2>
-      <!-- Здесь будет форма -->
+        <form class="modal-search-form" action="https://echo.htmlacademy.ru" method="get">
+          <p>
+            <label>Дата заезда:
+              <input type="date" name="arrival-date" value="" placeholder="24 апреля 2017">
+            </label>
+          </p>
+          <p>
+            <label>Дата выезда:
+              <input type="date" name="departure-date" value="" placeholder="4 июля 2017">
+            </label>
+          </p>
+          <p>
+            <label for="adults-modal">Взрослые:</label>
+            <button class="button-input-minus" type="button">-</button>
+            <input type="text" name="adults" value="" placeholder="2" id="adults-modal">
+            <button class="button-input-plus" type="button">+</button>
+          </p>
+          <p>
+            <label for="kids-modal">Дети:</label>
+            <button class="button-input-minus" type="button">-</button>
+            <input type="text" name="kids" value="" placeholder="0" id="kids-modal">
+            <button class="button-input-plus" type="button">+</button>
+          </p>
+          <button class="button-modal-search-form" type="submit">Найти</button>
+        </form>
       </section>
     </div>
   </body>

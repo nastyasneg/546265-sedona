@@ -28,7 +28,65 @@
       <main>
         <section class="filters">
           <h2 class="visually-hidden">Фильтр поиска гостиницы</h2>
-          <!-- Здесь будет форма -->
+          <form class="filter-form" action="https://echo.htmlacademy.ru" method="get">
+            <fieldset>
+              <legend>Инфраструктура:</legend>
+              <ul>
+                <li class="filter-option">
+                  <label>
+                    <input class="visually-hidden filter-input" type="checkbox" name="infrastructure" value="pool" checked>
+                    Бассейн
+                  </label>
+                </li>
+                <li class="filter-option">
+                  <label>
+                    <input class="visually-hidden filter-input" type="checkbox" name="infrastructure" value="parking">
+                    Парковка
+                  </label>
+                </li>
+                <li class="filter-option">
+                  <label>
+                    <input class="visually-hidden filter-input" type="checkbox" name="infrastructure" value="wi-fi">
+                    Wi-Fi
+                  </label>
+                </li>
+              </ul>
+            </fieldset>
+            <fieldset>
+              <legend>Тип жилья:</legend>
+              <ul>
+                <li class="filter-option">
+                  <label>
+                    <input class="visually-hidden filter-input" type="checkbox" name="accommodation" value="hotel" checked>
+                    Гостиница
+                  </label>
+                </li>
+                <li class="filter-option">
+                  <label>
+                    <input class="visually-hidden filter-input" type="checkbox" name="accommodation" value="motel" checked>
+                    Мотель
+                  </label>
+                </li>
+                <li class="filter-option">
+                  <label>
+                    <input class="visually-hidden filter-input" type="checkbox" name="accommodation" value="apartments" checked>
+                    Апартаменты
+                  </label>
+                </li>
+              </ul>
+            </fieldset>
+            <fieldset>
+              <legend>Стоимость в сутки (Р):</legend>
+              <input class="filter-input-cost" type="number" name="cost-per-day-min" value="" placeholder="от 0">
+              <input class="filter-input-cost" type="number" name="cost-per-day-max" value="" placeholder="до 3000">
+              <div class="value-slider">
+                <span class="value-slider-point min-point"></span>
+                <div class="value-slider-line"></div>
+                <span class="value-slider-point max-point"></span>
+              </div>
+            </fieldset>
+            <button class="filter-button" type="submit">Показать</button>
+          </form>
         </section>
         <section class="catalog">
           <h2 class="visually-hidden">Результаты поиска гостиницы</h2>
@@ -36,13 +94,23 @@
           <div class="catalog-sort">
             <p>Сортировка:</p>
             <ul class="sort-by-category">
-              <li class="sort-item-current">По цене</li>
-              <li class="sort-item">По типу</li>
-              <li class="sort-item">По рейтингу</li>
+              <li class="sort-item-current">
+                <a href="#">По цене</a>
+              </li>
+              <li class="sort-item">
+                <a href="#">По типу</a>
+              </li>
+              <li class="sort-item">
+                <a href="#">По рейтингу</a>
+              </li>
             </ul>
             <ul class="sort-by-priority">
-              <li class="sort-up">По возрастанию</li>
-              <li class="sort-down sort-arrow-current">По убыванию</li>
+              <li class="sort-up">
+                <a href="#">По возрастанию</a>
+              </li>
+              <li class="sort-down sort-arrow-current">
+                <a href="#">По убыванию</a>
+              </li>
             </ul>
           </div>
           <ul class="catalog-list">
@@ -118,7 +186,7 @@
         </ul>
         <p class="footer-copyright">
           <span>Website by</span>
-          <a class="copyright-logo" href="https://htmlacademy.ru/intensive/htmlcss" target="_blank">
+          <a class="copyright-logo" href="https://htmlacademy.ru/intensive/htmlcss" target="_blank" aria-label="Интенсив Базовый HTML&CSS в HTML Академии">
             <img src="img/logo-htmlacademy.svg" alt="Логотип HTMLacademy" width="115" height="41">
           </a>
         </p>
