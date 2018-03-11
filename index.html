@@ -13,13 +13,13 @@
           </a>
           <ul class="site-navigation">
             <li>
-              <a href="info.html">Информация</a>
+              <a href="#">Информация</a>
             </li>
             <li>
-              <a href="media.html">Фото и видео</a>
+              <a href="#">Фото и видео</a>
             </li>
             <li>
-              <a href="map.html">Карта штата</a>
+              <a href="#">Карта штата</a>
             </li>
             <li>
               <a href="catalog.html">Гостиницы</a>
@@ -120,7 +120,7 @@
         </ul>
         <p class="footer-copyright">
           <span>Website by</span>
-          <a class="copyright-logo" href="https://htmlacademy.ru/intensive/htmlcss" target="_blank" aria-label="Интенсив Базовый HTML&CSS в HTML Академии">
+          <a class="copyright-logo" href="https://htmlacademy.ru/intensive/htmlcss" aria-label="Интенсив Базовый HTML&CSS в HTML Академии">
             <img src="img/logo-htmlacademy.svg" alt="Логотип HTMLacademy" width="115" height="41">
           </a>
         </p>
@@ -131,25 +131,27 @@
         <form class="modal-search-form" action="https://echo.htmlacademy.ru" method="get">
           <p>
             <label>Дата заезда:
-              <input type="date" name="arrival-date" value="" placeholder="24 апреля 2017">
+              <input type="text" name="arrival-date" value="" placeholder="24 апреля 2017">
+              <span class="input-calendar"></span>
             </label>
           </p>
           <p>
             <label>Дата выезда:
-              <input type="date" name="departure-date" value="" placeholder="4 июля 2017">
+              <input type="text" name="departure-date" value="" placeholder="4 июля 2017">
+              <span class="input-calendar"></span>
             </label>
           </p>
           <p>
-            <label for="adults-modal">Взрослые:</label>
-            <button class="button-input-minus" type="button">-</button>
-            <input type="text" name="adults" value="" placeholder="2" id="adults-modal">
-            <button class="button-input-plus" type="button">+</button>
+            <label for="adults">Взрослые:</label>
+            <button class="button-input-remove" type="button">-</button>
+            <input id="adults" type="text" name="adults" value="" placeholder="2">
+            <button class="button-input-add" type="button">+</button>
           </p>
           <p>
-            <label for="kids-modal">Дети:</label>
-            <button class="button-input-minus" type="button">-</button>
-            <input type="text" name="kids" value="" placeholder="0" id="kids-modal">
-            <button class="button-input-plus" type="button">+</button>
+            <label for="kids">Дети:</label>
+            <button class="button-input-remove" type="button">-</button>
+            <input id="kids" type="text" name="kids" value="" placeholder="0">
+            <button class="button-input-add" type="button">+</button>
           </p>
           <button class="button-modal-search-form" type="submit">Найти</button>
         </form>
