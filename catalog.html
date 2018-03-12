@@ -93,42 +93,28 @@
         <section class="catalog">
           <h2 class="visually-hidden">Результаты поиска гостиницы</h2>
           <b class="catalog-result">Найдено: 3</b>
-          <form class="catalog-sort" action="https://echo.htmlacademy.ru" method="get">
+          <div class="catalog-sort">
             <p>Сортировка:</p>
-            <fieldset>
-              <ul class="sort-by-category">
-                <li class="sort-item-current">
-                  <label>По цене
-                    <input class="visually-hidden" type="radio" name="sort-by-category" value="price">
-                  </label>
-                </li>
-                <li class="sort-item">
-                  <label>По типу
-                    <input class="visually-hidden" type="radio" name="sort-by-category" value="type">
-                  </label>
-                </li>
-                <li class="sort-item">
-                  <label>По рейтингу
-                    <input class="visually-hidden" type="radio" name="sort-by-category" value="rating">
-                  </label>
-                </li>
-              </ul>
-            </fieldset>
-            <fieldset>
-              <ul class="sort-by-priority">
-                <li class="sort-up">
-                  <label>По возрастанию
-                    <input class="visually-hidden" type="radio" name="sort-by-priority" value="ascend">
-                  </label>
-                </li>
-                <li class="sort-down sort-arrow-current">
-                  <label>По убыванию
-                    <input class="visually-hidden" type="radio" name="sort-by-priority" value="descend">
-                  </label>
-                </li>
-              </ul>
-            </fieldset>
-          </form>
+            <ul class="sort-by-category">
+              <li class="sort-item-current">
+                <a href="#">По цене</a>
+              </li>
+              <li class="sort-item">
+                <a href="#">По типу</a>
+              </li>
+              <li class="sort-item">
+                <a href="#">По рейтингу</a>
+              </li>
+            </ul>
+            <ul class="sort-by-priority">
+              <li class="sort-up">
+                <button class="button-sort-up">По возрастанию</button>
+              </li>
+              <li class="sort-down sort-arrow-current">
+                <button class="button-sort-down">По убыванию</button>
+              </li>
+            </ul>
+          </div>
           <ul class="catalog-list">
             <li class="catalog-item">
               <div class="catalog-item-image">
