@@ -3,6 +3,9 @@
   <head>
     <meta charset="utf-8">
     <title>Главная - Седона</title>
+    <link href="https://fonts.googleapis.com/css?family=PT+Sans:400,700&amp;subset=cyrillic" rel="stylesheet">
+    <link href="css/normalize.css" rel="stylesheet">
+    <link href="css/style.css" rel="stylesheet">
   </head>
   <body>
     <div class="container">
@@ -29,8 +32,14 @@
       </header>
       <main>
         <section class="intro">
+          <div class="intro-pic">
+            <div class="welcome-pic"></div>
+          </div>
           <h1 class="visually-hidden">Добро пожаловать в Седону</h1>
-          <p class="intro-title">СЕДОНА — небольшой городок в Аризоне, заслуживающий большего!</p>
+          <p class="intro-title">
+            СЕДОНА — небольшой городок в Аризоне,<br>
+            заслуживающий большего!
+          </p>
           <p>Рассмотрим 5 причин, по которым Седона круче, чем гранд каньон!</p>
         </section>
         <section class="features">
@@ -38,7 +47,7 @@
           <ul class="features-list">
             <li>
               <ul class="features-row">
-                <li class="features-item">
+                <li class="features-item blue-item">
                   <h3 class="features-title">Настоящий городок</h3>
                   <span class="features-number">№1</span>
                   <p class="features-text">Седона — не аттракцион для туристов, там течет своя жизнь</p>
@@ -49,15 +58,15 @@
               </ul>
               <ul class="features-row">
                 <li class="features-item">
-                  <h4>Жилье</h4>
+                  <h4 class="features-title">Жилье</h4>
                   <p>Рекомендуем пожить в настоящем мотеле, все как в кино!</p>
                 </li >
                 <li class="features-item">
-                  <h4>Еда</h4>
+                  <h4 class="features-title">Еда</h4>
                   <p>Всегда заказывайте фирменный бургер, Вы не разочаруетесь!</p>
                 </li>
                 <li class="features-item">
-                  <h4>Сувениры</h4>
+                  <h4 class="features-title">Сувениры</h4>
                   <p>Не только китайского, но и местного производства!</p>
                 </li>
               </ul>
@@ -65,7 +74,7 @@
                 <li>
                   <img src="img/devil-bridge.jpg" alt="Мост дьявола" width="799" height="399">
                 </li>
-                <li class="features-item">
+                <li class="features-item blue-item">
                   <h3 class="features-title">Там есть мост дьявола</h3>
                   <span class="features-number">№2</span>
                   <p class="features-text">Да, по нему можно пройти! Если конечно вы осмелитесь</p>
@@ -106,7 +115,11 @@
         </section>
       </main>
       <footer class="main-footer">
-        <a class="hashtag" href="#">#visitsedona</a>
+        <ul class="hashtag">
+          <li>
+            <a href="#">#visitsedona</a>
+          </li>
+        </ul>
         <ul class="footer-social">
           <li class="social-button">
             <a href="https://twitter.com/">Twitter</a>
@@ -132,26 +145,26 @@
           <p>
             <label>Дата заезда:
               <input type="text" name="arrival-date" value="" placeholder="24 апреля 2017">
-              <button class="button-calendar" type="button">Календарь</button>
+              <button class="button-input button-calendar" type="button">Календарь</button>
             </label>
           </p>
           <p>
             <label>Дата выезда:
               <input type="text" name="departure-date" value="" placeholder="4 июля 2017">
-              <button class="button-calendar" type="button">Календарь</button>
+              <button class="button-input button-calendar" type="button">Календарь</button>
             </label>
           </p>
           <p>
             <label for="adults">Взрослые:</label>
-            <button class="button-input-remove" type="button">-</button>
+            <button class="button-input button-remove" type="button">-</button>
             <input id="adults" type="text" name="adults" value="" placeholder="2">
-            <button class="button-input-add" type="button">+</button>
+            <button class="button-input button-add" type="button">+</button>
           </p>
           <p>
             <label for="kids">Дети:</label>
-            <button class="button-input-remove" type="button">-</button>
+            <button class="button-input button-remove" type="button">-</button>
             <input id="kids" type="text" name="kids" value="" placeholder="0">
-            <button class="button-input-add" type="button">+</button>
+            <button class="button-input button-add" type="button">+</button>
           </p>
           <button class="button-modal-search-form" type="submit">Найти</button>
         </form>
