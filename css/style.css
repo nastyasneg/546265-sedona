@@ -148,7 +148,9 @@ a {
   height: auto;
 }
 
-.site-navigation-current a {
+.site-navigation-current a,
+.site-navigation-current a:hover,
+.site-navigation-current a:active {
   color: #766357;
 }
 
