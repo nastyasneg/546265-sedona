@@ -95,7 +95,7 @@
         </section>
         <section class="catalog">
           <h2 class="visually-hidden">Результаты поиска гостиницы</h2>
-          <b class="catalog-result">Найдено: 3</b>
+          <span class="catalog-result">Найдено: 3</span>
           <div class="catalog-sort">
             <p>Сортировка:</p>
             <ul class="sort-category">
@@ -111,10 +111,10 @@
             </ul>
             <ul class="sort-priority">
               <li class="sort-up">
-                <button class="button-sort-up">По возрастанию</button>
+                <a class="button-sort-up">По возрастанию</a>
               </li>
               <li class="sort-down sort-arrow-current">
-                <button class="button-sort-down">По убыванию</button>
+                <a class="button-sort-down">По убыванию</a>
               </li>
             </ul>
           </div>
@@ -124,15 +124,15 @@
                 <img src="img/amara-resort.jpg" alt="Amara Resort &amp; Spa" width="135" height="90">
               </div>
               <h3>
-                <a href="catalog-item.html">Amara Resort &amp; Spa</a>
+                <a class="catalog-title" href="catalog-item.html">Amara Resort &amp; Spa</a>
               </h3>
               <p class="catalog-category">
                 <span class="catalog-type">Гостиница</span>
                 <span class="catalog-price">от 4000 Р.</span>
               </p>
               <p class="catalog-buttons">
-                <a class="catalog-button-info" href="#">Подробнее</a>
-                <a class="catalog-button-book" href="#">Забронировать</a>
+                <a class="button catalog-button-info" href="#">Подробнее</a>
+                <a class="button catalog-button-book" href="#">Забронировать</a>
               </p>
               <span class="catalog-item-stars">****</span>
               <span class="catalog-item-rating">Рейтинг: 8,5</span>
@@ -142,15 +142,15 @@
                 <img src="img/desert-quailinn.jpg" alt="Desert Quail Inn" width="135" height="90">
               </div>
               <h3>
-                <a href="catalog-item.html">Desert Quail Inn</a>
+                <a class="catalog-title" href="catalog-item.html">Desert Quail Inn</a>
               </h3>
               <p class="catalog-category">
                 <span class="catalog-type">Мотель</span>
                 <span class="catalog-price">от 3000 Р.</span>
               </p>
               <p class="catalog-buttons">
-                <a class="catalog-button-info" href="#">Подробнее</a>
-                <a class="catalog-button-book" href="#">Забронировать</a>
+                <a class="button catalog-button-info" href="#">Подробнее</a>
+                <a class="button catalog-button-book" href="#">Забронировать</a>
               </p>
               <span class="catalog-item-stars">***</span>
               <span class="catalog-item-rating">Рейтинг: 8,9</span>
@@ -160,15 +160,15 @@
                 <img src="img/vilas-at-poco-diablo.jpg" alt="Villas at Poco Diablo" width="135" height="90">
               </div>
               <h3>
-                <a href="catalog-item.html">Villas at Poco Diablo</a>
+                <a class="catalog-title" href="catalog-item.html">Villas at Poco Diablo</a>
               </h3>
               <p class="catalog-category">
                 <span class="catalog-type">Апартаменты</span>
                 <span class="catalog-price">от 2000 Р.</span>
               </p>
               <p class="catalog-buttons">
-                <a class="catalog-button-info" href="#">Подробнее</a>
-                <a class="catalog-button-book" href="#">Забронировать</a>
+                <a class="button catalog-button-info" href="#">Подробнее</a>
+                <a class="button catalog-button-book" href="#">Забронировать</a>
               </p>
               <span class="catalog-item-stars">**</span>
               <span class="catalog-item-rating">Рейтинг: 9,2</span>
@@ -177,11 +177,9 @@
         </section>
       </main>
       <footer class="main-footer">
-        <ul class="hashtag">
-          <li>
-            <a href="#">#visitsedona</a>
-          </li>
-        </ul>
+        <div class="hashtag">
+          <a href="#">#visitsedona</a>
+        </div>
         <ul class="footer-social">
           <li class="social-button">
             <a href="https://twitter.com/">Twitter</a>
