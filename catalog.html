@@ -3,6 +3,9 @@
   <head>
     <meta charset="utf-8">
     <title>Гостиницы - Седона</title>
+    <link href="https://fonts.googleapis.com/css?family=PT+Sans:400,700&amp;subset=cyrillic" rel="stylesheet">
+    <link href="css/normalize.css" rel="stylesheet">
+    <link href="css/style.css" rel="stylesheet">
   </head>
   <body>
     <div class="container">
@@ -28,7 +31,7 @@
         </nav>
       </header>
       <main>
-        <section class="filters">
+        <section class="filter">
           <h2 class="visually-hidden">Фильтр поиска гостиницы</h2>
           <form class="filter-form" action="https://echo.htmlacademy.ru" method="get">
             <fieldset>
@@ -95,7 +98,7 @@
           <b class="catalog-result">Найдено: 3</b>
           <div class="catalog-sort">
             <p>Сортировка:</p>
-            <ul class="sort-by-category">
+            <ul class="sort-category">
               <li class="sort-item-current">
                 <a href="#">По цене</a>
               </li>
@@ -106,7 +109,7 @@
                 <a href="#">По рейтингу</a>
               </li>
             </ul>
-            <ul class="sort-by-priority">
+            <ul class="sort-priority">
               <li class="sort-up">
                 <button class="button-sort-up">По возрастанию</button>
               </li>
@@ -174,7 +177,11 @@
         </section>
       </main>
       <footer class="main-footer">
-        <a class="hashtag" href="#">#visitsedona</a>
+        <ul class="hashtag">
+          <li>
+            <a href="#">#visitsedona</a>
+          </li>
+        </ul>
         <ul class="footer-social">
           <li class="social-button">
             <a href="https://twitter.com/">Twitter</a>
