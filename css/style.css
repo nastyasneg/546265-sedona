@@ -21,6 +21,11 @@ a {
   text-decoration: none;
 }
 
+img {
+  max-width: 100%;
+  height: auto;
+}
+
 /* HEADER */
 
 .main-navigation {
@@ -57,22 +62,28 @@ a {
 
 /* INDEX page */
 
-.intro div {
+.intro {
   width: 100%;
   height: 512px;
-}
 
-.intro-pic {
   background-color: #bad4e5;
   background-image: url("../img/background-mountains.jpg");
-  background-size: 100% auto;
+  background-size: cover;
   background-position: 0 0;
   background-repeat: no-repeat;
 }
 
-.welcome-pic {
+.intro::before {
+  content: " ";
+  display: block;
+  position: relative;
+  top: 65px;
+  margin-left: auto;
+  margin-right: auto;
+  width: 458px;
+  height: 353px;
+
   background-image: url("../img/welcome-text.png");
-  background-position: center;
   background-repeat: no-repeat;
 }
 
@@ -172,11 +183,6 @@ a {
   background-color: #625147;
 }
 
-.main-map img {
-  width: 100%;
-  height: auto;
-}
-
 /* CATALOG page */
 
 .site-navigation-current a,
@@ -251,6 +257,10 @@ a {
   line-height: 18px;
 }
 
+.catalog-sort fieldset{
+  border: none;
+}
+
 .catalog-sort p {
   color: #000000;
 }
@@ -262,27 +272,27 @@ a {
   list-style: none;
 }
 
-.sort-category a {
+.sort-category label {
   color: rgba(0, 0, 0, 0.3);
 
   border-bottom: 1px dotted #81b3d2;
 }
 
-.sort-category a:hover,
-.sort-category a:focus {
+.sort-category label:hover,
+.sort-category label:focus {
   color: #81b3d2;
 }
 
-.sort-category a:active {
+.sort-category label:active {
   color: #000000;
 
   border: none;
 }
 
-.sort-item-current a,
-.sort-item-current a:hover,
-.sort-item-current a:active,
-.sort-item-current a:focus {
+.sort-item-current label,
+.sort-item-current label:hover,
+.sort-item-current label:active,
+.sort-item-current label:focus {
   color: #81b3d2;
 
   border: none;
@@ -294,24 +304,24 @@ a {
   list-style: none;
 }
 
-.sort-priority a {
+.sort-priority label {
   color: #cacaca;
   text-transform: uppercase;
 }
 
-.sort-priority a:hover,
-.sort-priority a:focus {
+.sort-priority label:hover,
+.sort-priority label:focus {
   color: #000000;
 }
 
-.sort-priority a:active {
+.sort-priority label:active {
   color: #81b3d2;
 }
 
-.sort-arrow-current a,
-.sort-arrow-current a:hover,
-.sort-arrow-current a:active,
-.sort-arrow-current a:focus {
+.sort-arrow-current label,
+.sort-arrow-current label:hover,
+.sort-arrow-current label:active,
+.sort-arrow-current label:focus {
   color: #81b3d2;
 }
 

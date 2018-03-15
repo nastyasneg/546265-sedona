@@ -96,28 +96,42 @@
         <section class="catalog">
           <h2 class="visually-hidden">Результаты поиска гостиницы</h2>
           <span class="catalog-result">Найдено: 3</span>
-          <div class="catalog-sort">
+          <form class="catalog-sort" action="https://echo.htmlacademy.ru" method="get">
             <p>Сортировка:</p>
-            <ul class="sort-category">
-              <li class="sort-item-current">
-                <a>По цене</a>
-              </li>
-              <li class="sort-item">
-                <a href="#">По типу</a>
-              </li>
-              <li class="sort-item">
-                <a href="#">По рейтингу</a>
-              </li>
-            </ul>
-            <ul class="sort-priority">
-              <li class="sort-up">
-                <a class="button-sort-up">По возрастанию</a>
-              </li>
-              <li class="sort-down sort-arrow-current">
-                <a class="button-sort-down">По убыванию</a>
-              </li>
-            </ul>
-          </div>
+            <fieldset>
+              <ul class="sort-category">
+                <li class="sort-item-current">
+                  <label>По цене
+                    <input class="visually-hidden" type="radio" name="sort-by-category" value="price" checked>
+                  </label>
+                </li>
+                <li class="sort-item">
+                  <label>По типу
+                    <input class="visually-hidden" type="radio" name="sort-by-category" value="type">
+                  </label>
+                </li>
+                <li class="sort-item">
+                  <label>По рейтингу
+                    <input class="visually-hidden" type="radio" name="sort-by-category" value="rating">
+                 </label>
+                </li>
+              </ul>
+            </fieldset>
+            <fieldset>
+              <ul class="sort-priority">
+                <li class="sort-up">
+                  <label>По возрастанию
+                     <input class="visually-hidden" type="radio" name="sort-by-priority" value="ascend">
+                  </label>
+                </li>
+                <li class="sort-down sort-arrow-current">
+                  <label>По убыванию
+                    <input class="visually-hidden" type="radio" name="sort-by-priority" value="descend" checked>
+                  </label>
+                </li>
+              </ul>
+            </fieldset>
+          </form>
           <ul class="catalog-list">
             <li class="catalog-item">
               <div class="catalog-item-image">
