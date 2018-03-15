@@ -266,25 +266,25 @@ img {
   color: #000000;
 }
 
-.sort-category {
+.sort-by-category {
   padding: 0;
   margin: 0;
 
   list-style: none;
 }
 
-.sort-category label {
+.sort-by-category label {
   color: rgba(0, 0, 0, 0.3);
 
   border-bottom: 1px dotted #81b3d2;
 }
 
-.sort-category label:hover,
-.sort-category label:focus {
+.sort-by-category label:hover,
+.sort-by-category label:focus {
   color: #81b3d2;
 }
 
-.sort-category label:active {
+.sort-by-category label:active {
   color: #000000;
 
   border: none;
@@ -299,23 +299,23 @@ img {
   border: none;
 }
 
-.sort-priority {
+.sort-by-priority {
   padding: 0;
 
   list-style: none;
 }
 
-.sort-priority label {
+.sort-by-priority label {
   color: #cacaca;
   text-transform: uppercase;
 }
 
-.sort-priority label:hover,
-.sort-priority label:focus {
+.sort-by-priority label:hover,
+.sort-by-priority label:focus {
   color: #000000;
 }
 
-.sort-priority label:active {
+.sort-by-priority label:active {
   color: #81b3d2;
 }
 
@@ -342,16 +342,16 @@ img {
   font-weight: bold;
 }
 
-.catalog-title {
+.hotel-name {
   color: #000000;
 }
 
-.catalog-title:hover,
-.catalog-title:focus {
+.hotel-name:hover,
+.hotel-name:focus {
   color: #81b3d2;
 }
 
-.catalog-title:active {
+.hotel-name:active {
   color: rgba(0, 0, 0, 0.3);
 }
 

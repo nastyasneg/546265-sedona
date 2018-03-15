@@ -103,6 +103,36 @@
           </p>
           <button class="button button-open-form" type="button">Поиск гостиницы в Седоне</button>
         </section>
+        <section class="modal">
+          <h2 class="visually-hidden">Форма поиска гостиницы</h2>
+          <form class="modal-search-form" action="https://echo.htmlacademy.ru" method="get">
+            <p>
+              <label>Дата заезда:
+                <input type="text" name="arrival-date" value="" placeholder="24 апреля 2017">
+              </label>
+              <button class="button-input button-calendar" type="button">Календарь</button>
+            </p>
+            <p>
+              <label>Дата выезда:
+                <input type="text" name="departure-date" value="" placeholder="4 июля 2017">
+              </label>
+              <button class="button-input button-calendar" type="button">Календарь</button>
+            </p>
+            <p>
+              <label for="adults">Взрослые:</label>
+              <button class="button-input button-remove" type="button">-</button>
+              <input id="adults" type="text" name="adults" value="" placeholder="2">
+              <button class="button-input button-add" type="button">+</button>
+            </p>
+            <p>
+              <label for="kids">Дети:</label>
+              <button class="button-input button-remove" type="button">-</button>
+              <input id="kids" type="text" name="kids" value="" placeholder="0">
+              <button class="button-input button-add" type="button">+</button>
+            </p>
+            <button class="button button-search-form" type="submit">Найти</button>
+          </form>
+        </section>
         <section class="main-map">
           <h2 class="visually-hidden">Как добраться до Седоны</h2>
           <img src="img/map.jpg" alt="Седона на карте" width="1199" height="594">
@@ -130,37 +160,6 @@
           </a>
         </p>
       </footer>
-
-      <section class="modal">
-        <h2 class="visually-hidden">Форма поиска гостиницы</h2>
-        <form class="modal-search-form" action="https://echo.htmlacademy.ru" method="get">
-          <p>
-            <label>Дата заезда:
-              <input type="text" name="arrival-date" value="" placeholder="24 апреля 2017">
-            </label>
-            <button class="button-input button-calendar" type="button">Календарь</button>
-          </p>
-          <p>
-            <label>Дата выезда:
-              <input type="text" name="departure-date" value="" placeholder="4 июля 2017">
-            </label>
-            <button class="button-input button-calendar" type="button">Календарь</button>
-          </p>
-          <p>
-            <label for="adults">Взрослые:</label>
-            <button class="button-input button-remove" type="button">-</button>
-            <input id="adults" type="text" name="adults" value="" placeholder="2">
-            <button class="button-input button-add" type="button">+</button>
-          </p>
-          <p>
-            <label for="kids">Дети:</label>
-            <button class="button-input button-remove" type="button">-</button>
-            <input id="kids" type="text" name="kids" value="" placeholder="0">
-            <button class="button-input button-add" type="button">+</button>
-          </p>
-          <button class="button button-search-form" type="submit">Найти</button>
-        </form>
-      </section>
     </div>
   </body>
 </html>
