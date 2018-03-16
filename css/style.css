@@ -26,6 +26,14 @@ img {
   height: auto;
 }
 
+.visually-hidden {
+  position: absolute;
+  clip: rect(0 0 0 0);
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+}
+
 /* HEADER */
 .container {
   max-width: 1200px;
@@ -34,13 +42,13 @@ img {
 
 .main-header::before {
   content: " ";
-  display: block;
   position: absolute;
-  margin: auto;
   left: 0;
   right: 0;
   z-index: 0;
 
+  display: block;
+  margin: auto;
   width: 137px;
   height: 70px;
 
@@ -50,10 +58,12 @@ img {
 
 .main-header-logo {
   z-index: 1;
-
   order: 1;
+
   width: 66px;
   height: 56px;
+
+  outline: 3px solid green;
 }
 
 .main-navigation {
@@ -108,22 +118,22 @@ img {
 /* INDEX page */
 
 .intro {
-  width: 100%;
-  height: 512px;
+  display: flex;
+  flex-direction: column;
+  min-height: 720px;
 
   background-color: #bad4e5;
   background-image: url("../img/background-mountains.jpg");
   background-size: cover;
-  background-position: 0 0;
+  background-position: center center;
   background-repeat: no-repeat;
 }
 
 .intro::before {
   content: " ";
-  display: block;
-  position: relative;
-  top: 65px;
 
+  margin-top: 76px;
+  margin-bottom: 80px;
   margin-left: auto;
   margin-right: auto;
   width: 458px;
@@ -131,6 +141,8 @@ img {
 
   background-image: url("../img/welcome-text.png");
   background-repeat: no-repeat;
+
+  outline: 2px solid red;
 }
 
 .intro-title {
@@ -140,10 +152,21 @@ img {
   font-weight: bold;
 }
 
+.intro-text {
+  width: 100%;
+  min-height: 215px;
+
+  background-color: #ffffff;
+}
+
 .intro p {
   margin: 0;
 
   text-align: center;
+}
+
+.features-row {
+  display: flex;
 }
 
 .features-list,
@@ -164,8 +187,18 @@ img {
 }
 
 .features-item {
+  padding: 50px 0px;
+  width: 33%;
+
   text-align: center;
 }
+
+.features-pic {
+  width: 67%;
+  height: auto;
+}
+
+
 
 .features p {
   margin: 0;
