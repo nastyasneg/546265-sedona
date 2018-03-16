@@ -27,8 +27,40 @@ img {
 }
 
 /* HEADER */
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.main-header::before {
+  content: " ";
+  display: block;
+  position: absolute;
+  margin: auto;
+  left: 0;
+  right: 0;
+  z-index: 0;
+
+  width: 137px;
+  height: 70px;
+
+  background-image: url("../img/background-logo.png");
+  background-repeat: no-repeat;
+}
+
+.main-header-logo {
+  z-index: 1;
+
+  order: 1;
+  width: 66px;
+  height: 56px;
+}
 
 .main-navigation {
+  display: flex;
+  justify-content: space-between;
+  padding: 0 6%;
+
   line-height: 26px;
   color: #000000;
   font-weight: bold;
@@ -58,6 +90,19 @@ img {
   color: #000000;
 
   opacity: 0.3;
+}
+
+.left-navigation {
+  width: 40%;
+
+  outline: 3px solid red;
+}
+
+.right-navigation {
+  order: 2;
+  width: 40%;
+
+  outline: 3px solid blue;
 }
 
 /* INDEX page */
