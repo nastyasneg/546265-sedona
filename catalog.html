@@ -12,15 +12,17 @@
       <header class="main-header">
         <nav class="main-navigation">
           <a class="main-header-logo" href="index.html">
-            <img src="img/logo.png" alt="Логотип Седона" width="138" height="70">
+            <img src="img/logo-sedona.png" alt="Логотип Седона" width="138" height="70">
           </a>
-          <ul class="site-navigation">
+          <ul class="site-navigation left-navigation">
             <li>
               <a href="#">Информация</a>
             </li>
             <li>
               <a href="#">Фото и видео</a>
             </li>
+          </ul>
+          <ul class="site-navigation right-navigation">
             <li>
               <a href="#">Карта штата</a>
             </li>
@@ -89,12 +91,12 @@
                 <div class="value-slider-line"></div>
                 <span class="value-slider-point max-point"></span>
               </div>
+              <button class="filter-button" type="submit">Показать</button>
             </fieldset>
-            <button class="filter-button" type="submit">Показать</button>
           </form>
         </section>
-        <section class="catalog">
-          <h2 class="visually-hidden">Результаты поиска гостиницы</h2>
+        <section class="sort">
+          <h2 class="visually-hidden">Сортировка результатов поиска</h2>
           <span class="catalog-result">Найдено: 3</span>
           <form class="catalog-sort" action="https://echo.htmlacademy.ru" method="get">
             <p>Сортировка:</p>
@@ -132,6 +134,9 @@
               </ul>
             </fieldset>
           </form>
+        </section>
+        <section class="catalog">
+            <h2 class="visually-hidden">Результатов поиска</h2>
           <ul class="catalog-list">
             <li class="catalog-item">
               <div class="catalog-item-image">

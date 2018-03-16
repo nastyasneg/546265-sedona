@@ -276,6 +276,11 @@ img {
 }
 
 .filter-form {
+  padding: 30px 6%;
+  min-height: 185px;
+
+  display: flex;
+
   color: #ffffff;
 
   background-color: #809ebf;
@@ -287,6 +292,20 @@ img {
 
 .filter fieldset {
   border: none;
+}
+
+.filter fieldset:first-child,
+.filter fieldset:nth-child(2) {
+  width: 23%;
+
+  outline: 3px solid yellow;
+}
+
+.filter fieldset:last-child {
+  width: 33%;
+  margin-left: auto;
+
+  outline: 3px solid yellow;
 }
 
 .filter legend {
@@ -328,7 +347,14 @@ img {
   background-color: #ffffff;
 }
 
+.sort {
+  padding: 0 6%;
+  padding-top: 30px;
+}
+
 .catalog-result {
+  width: 165px;
+
   font-size: 21px;
   line-height: 26px;
   color: #000000;
@@ -336,12 +362,20 @@ img {
 }
 
 .catalog-sort {
+  display: flex;
+
   font-size: 12px;
   line-height: 18px;
 }
 
 .catalog-sort fieldset{
   border: none;
+}
+
+.catalog-sort fieldset:last-child {
+  margin-left: auto;
+
+  outline: 3px solid green;
 }
 
 .catalog-sort p {
@@ -406,6 +440,10 @@ img {
 .sort-arrow-current label:active,
 .sort-arrow-current label:focus {
   color: #81b3d2;
+}
+
+.catalog {
+  padding: 0 6%;
 }
 
 .catalog-list {
@@ -475,6 +513,10 @@ img {
   color: rgba(255, 255, 255, 0.3);
 
   background-color: #503e33;
+}
+
+.catalog-item {
+  padding: 30px 0;
 }
 
 .catalog-item-stars {
