@@ -165,11 +165,24 @@ img {
   text-align: center;
 }
 
+.features {
+  margin-bottom: 55px;
+}
+
+.features-list {
+  padding: 0 6%;
+}
+
 .features-row {
   display: flex;
   justify-content: space-between;
+  min-height: 255px;
 
   background-color: #ffffff;
+}
+
+.features-row:nth-child(2) {
+  min-height: 330px;
 }
 
 .features-list,
@@ -277,7 +290,7 @@ img {
 
 .filter-form {
   padding: 30px 6%;
-  min-height: 185px;
+  min-height: 155px;
 
   display: flex;
 
@@ -353,12 +366,16 @@ img {
 }
 
 .catalog-result {
+  display: inline-block;
+  float: left;
   width: 165px;
 
   font-size: 21px;
   line-height: 26px;
   color: #000000;
   font-weight: bold;
+
+  outline: 3px solid pink;
 }
 
 .catalog-sort {
@@ -370,6 +387,8 @@ img {
 
 .catalog-sort fieldset{
   border: none;
+
+  outline: 3px solid pink;
 }
 
 .catalog-sort fieldset:last-child {
@@ -380,6 +399,8 @@ img {
 
 .catalog-sort p {
   color: #000000;
+
+  outline: 3px solid pink;
 }
 
 .sort-by-category {
@@ -517,6 +538,8 @@ img {
 
 .catalog-item {
   padding: 30px 0;
+
+  outline: 3px solid red;
 }
 
 .catalog-item-stars {
