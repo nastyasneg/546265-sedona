@@ -30,7 +30,6 @@ img {
   margin: -1px;
 }
 
-/* HEADER */
 .container {
   max-width: 1200px;
   margin: 0 auto;
@@ -40,8 +39,11 @@ img {
               -5px 0 15px 0 rgba(0, 0, 0, 0.2);
 }
 
+/* HEADER */
+
 .main-header::before {
   content: " ";
+
   position: absolute;
   left: 0;
   right: 0;
@@ -125,7 +127,7 @@ img {
   background-color: #bad4e5;
   background-image: url("../img/background-mountains.jpg");
   background-size: cover;
-  background-position: center center;
+  background-position: center;
   background-repeat: no-repeat;
 }
 
@@ -218,7 +220,7 @@ img {
 
 .features-pic img {
   width: 100%;
-  height: auto;
+  height: фгauto;
 }
 
 .features p {
@@ -289,10 +291,9 @@ img {
 }
 
 .filter-form {
+  display: flex;
   padding: 30px 6%;
   min-height: 155px;
-
-  display: flex;
 
   color: #ffffff;
 
