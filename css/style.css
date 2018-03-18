@@ -367,53 +367,62 @@ img {
 }
 
 .sort {
+  display: flex;
+  align-items: baseline;
+
   padding: 0 6%;
-  padding-top: 30px;
+  padding-top: 25px;
 }
 
 .catalog-result {
-  display: inline-block;
-  float: left;
-  width: 165px;
+  width: 136px;
+  padding-right: 30px;
 
   font-size: 21px;
   line-height: 26px;
   color: #000000;
   font-weight: bold;
-
-  outline: 3px solid pink;
 }
 
 .catalog-sort {
   display: flex;
+  align-items: baseline;
 
+  width: 100%;
   font-size: 12px;
   line-height: 18px;
 }
 
 .catalog-sort fieldset{
   border: none;
-
-  outline: 3px solid pink;
 }
 
 .catalog-sort fieldset:last-child {
   margin-left: auto;
-
-  outline: 3px solid green;
 }
 
 .catalog-sort p {
-  color: #000000;
+  padding-left: 15px;
+  padding-right: 15px;
+  margin: 0;
 
-  outline: 3px solid pink;
+  color: #000000;
 }
 
 .sort-by-category {
+  display: flex;
+
   padding: 0;
+  padding-left: 20px;
   margin: 0;
 
   list-style: none;
+}
+
+.sort-by-category li {
+  padding-right: 30px;
+
+  text-align: center;
 }
 
 .sort-by-category label {
