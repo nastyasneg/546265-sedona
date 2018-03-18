@@ -41,36 +41,20 @@ img {
 
 /* HEADER */
 
-.main-header::before {
-  content: " ";
-
+.main-header-logo {
   position: absolute;
   left: 0;
   right: 0;
-  z-index: 0;
 
-  display: block;
   margin: auto;
-  width: 137px;
-  height: 70px;
 
-  background-image: url("../img/background-logo.png");
-  background-repeat: no-repeat;
-}
-
-.main-header-logo {
-  z-index: 1;
-  order: 1;
-
-  width: 66px;
-  height: 56px;
+  width: 138px;
+  height: 69px;
 
   outline: 3px solid green;
 }
 
 .main-navigation {
-  display: flex;
-  justify-content: space-between;
   padding: 0 6%;
 
   line-height: 26px;
@@ -81,13 +65,44 @@ img {
 }
 
 .site-navigation {
+  display: flex;
+  flex-wrap: wrap;
+
   margin: 0;
-  padding: 0;
+  padding: 15px 0;
 
   text-align: center;
 
   list-style: none;
 }
+
+.site-navigation li {
+  width: 20%;
+
+  outline: 3px solid blue;
+}
+
+.site-navigation li:nth-child(4n+1) {
+  margin-right: 30px;
+
+  text-align: left;
+}
+
+.site-navigation li:nth-child(4n+2) {
+  text-align: left;
+}
+
+.site-navigation li:nth-child(4n+3) {
+  margin-left: auto;
+  margin-right: 30px;
+
+  text-align: right;
+}
+
+.site-navigation li:nth-child(4n+4) {
+  text-align: right;
+}
+
 
 .site-navigation a {
   color: #000000;
@@ -104,25 +119,10 @@ img {
   opacity: 0.3;
 }
 
-.left-navigation {
-  width: 40%;
-
-  outline: 3px solid red;
-}
-
-.right-navigation {
-  order: 2;
-  width: 40%;
-
-  outline: 3px solid blue;
-}
-
 /* INDEX page */
 
 .intro {
-  display: flex;
-  flex-direction: column;
-  min-height: 720px;
+  padding-top: 510px;
 
   background-color: #bad4e5;
   background-image: url("../img/background-mountains.jpg");
@@ -133,13 +133,15 @@ img {
 
 .intro::before {
   content: " ";
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 50px;
+  left: 0;
 
-  margin-top: 76px;
-  margin-bottom: 80px;
-  margin-left: auto;
-  margin-right: auto;
   width: 458px;
   height: 353px;
+  margin: auto;
 
   background-image: url("../img/welcome-text.png");
   background-repeat: no-repeat;
@@ -148,23 +150,26 @@ img {
 }
 
 .intro-title {
+  padding-bottom: 30px;
+
   font-size: 21px;
   line-height: 26px;
   color: #000000;
   font-weight: bold;
 }
 
-.intro-text {
-  width: 100%;
-  min-height: 215px;
-
-  background-color: #ffffff;
+.intro p {
+  width: 600px;
+  margin: auto;
 }
 
-.intro p {
+.intro-text {
+  padding: 57px 0;
   margin: 0;
 
   text-align: center;
+
+  background-color: #ffffff;
 }
 
 .features {
