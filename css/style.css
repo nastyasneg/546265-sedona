@@ -225,7 +225,7 @@ img {
 
 .features-pic img {
   width: 100%;
-  height: фгauto;
+  height: auto;
 }
 
 .features p {
@@ -452,9 +452,14 @@ img {
 }
 
 .sort-by-priority {
+  display: flex;
   padding: 0;
 
   list-style: none;
+}
+
+.sort-by-priority li{
+  padding-left: 12px;
 }
 
 .sort-by-priority label {
@@ -498,16 +503,16 @@ img {
   font-weight: bold;
 }
 
-.hotel-name {
+.catalog-name a {
   color: #000000;
 }
 
-.hotel-name:hover,
-.hotel-name:focus {
+.catalog-name a:hover,
+.catalog-name a:focus {
   color: #81b3d2;
 }
 
-.hotel-name:active {
+.catalog-name a:active {
   color: rgba(0, 0, 0, 0.3);
 }
 
