@@ -122,6 +122,8 @@ img {
 /* INDEX page */
 
 .intro {
+  position: relative;
+
   padding-top: 510px;
 
   background-color: #bad4e5;
@@ -134,14 +136,13 @@ img {
 .intro::before {
   content: " ";
   position: absolute;
-  top: 0;
+  top: 75px;
   right: 0;
-  bottom: 50px;
   left: 0;
 
+  margin: auto;
   width: 458px;
   height: 353px;
-  margin: auto;
 
   background-image: url("../img/welcome-text.png");
   background-repeat: no-repeat;
