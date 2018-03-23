@@ -399,8 +399,9 @@ input[type="radio"].visually-hidden {
 
 .filter-form {
   display: flex;
-  padding: 30px 6%;
-  min-height: 155px;
+  padding: 0 6%;
+  padding-top: 25px;
+  padding-bottom: 5px;
 
   color: #ffffff;
 
@@ -412,45 +413,184 @@ input[type="radio"].visually-hidden {
 }
 
 .filter fieldset {
+  padding: 0;
+
   border: none;
 }
 
 .filter fieldset:first-child,
 .filter fieldset:nth-child(2) {
-  width: 23%;
-
-  outline: 3px solid yellow;
+  width: 245px;
 }
 
 .filter fieldset:last-child {
-  width: 33%;
   margin-left: auto;
-
-  outline: 3px solid yellow;
 }
 
 .filter legend {
+  margin-bottom: 25px;
+
   font-size: 16px;
   font-weight: bold;
 }
 
+.filter-slider legend {
+  margin: 0;
+  margin-bottom: 10px;
+}
+
+.price-controls {
+  position: relative;
+
+  width: 315px;
+  height: 36px;
+  margin-bottom: 20px;
+
+  font-size: 0;
+
+  border: 2px solid #ffffff;
+  border-radius: 2px;
+}
+
+.min-price::after {
+  content: "";
+  position: absolute;
+  top: 50%;
+  left: 50%;
+
+  width: 2px;
+  height: 22px;
+
+  background: #ffffff;
+  transform: translate(-50%, -50%);
+}
+
+.price-controls label {
+  display: inline-block;
+
+  font-size: 14px;
+  line-height: 38px;
+  vertical-align: top;
+
+  cursor: pointer;
+}
+
+.price-controls .min-price,
+.price-controls .max-price {
+  width: 90px;
+  padding-left: 65px;
+}
+
+.price-controls input {
+  width: 50px;
+  margin: 0;
+
+  color: inherit;
+  font: inherit;
+
+  background: none;
+  border: none;
+}
+
+.value-slider{
+  position: relative;
+
+  margin-bottom: 32px;
+}
+
+.value-slider .line {
+  height: 2px;
+
+  background-color: rgba(255, 255, 255, 0.3);
+}
+
+.value-slider .bar {
+  width: 80%;
+  height: 2px;
+
+  background-color: #ffffff;
+}
+
+.value-slider-point {
+  position: absolute;
+  top: -9px;
+
+  width: 4px;
+  height: 4px;
+
+  background: #ababab;
+  border: 8px solid #ffffff;
+  border-radius: 50%;
+  box-shadow: 0 2px 1px 0 rgba(0, 1, 1, 0.2);
+  cursor: pointer;
+}
+
+.value-slider-point:hover {
+  background: #1c4f80;
+}
+
+.slider-point-min {
+  left: 0;
+}
+
+.slider-point-max {
+  left: 80%;
+}
+
 .filter ul {
+  position: relative;
+
   margin: 0;
   padding: 0;
+  padding-left: 40px;
+
+  cursor: pointer;
 
   list-style: none;
+}
+
+.filter-option {
+  margin-bottom: 25px;
 }
 
 .filter input {
   font: inherit;
   color: #ffffff;
-  text-align: center;
 
   background-color: transparent;
-  border: 2px solid #ffffff;
+}
+
+.filter input[type="checkbox"] + .checkbox-indikator {
+  position: absolute;
+  left: 0;
+
+  width: 23px;
+  height: 23px;
+
+  cursor: pointer;
+
+  background-image: url("../img/icon/checkbox-off.svg");
+  background-repeat: no-repeat;
+  background-position: 0 0;
+}
+
+.filter input[type="checkbox"]:checked + .checkbox-indikator {
+  position: absolute;
+  left: 0;
+
+  width: 23px;
+  height: 23px;
+
+  background-image: url("../img/icon/checkbox-on.svg");
+  background-repeat: no-repeat;
+  background-position: 0 0;
 }
 
 .filter-button {
+  display: block;
+  margin: 0 auto;
+  padding: 6px 35px;
+
   font: inherit;
   color: #ffffff;
   text-transform: uppercase;
@@ -459,6 +599,8 @@ input[type="radio"].visually-hidden {
 
   background-color: transparent;
   border: 2px solid #ffffff;
+  border-radius: 2px;
+  cursor: pointer;
 }
 
 .filter-button:hover,
@@ -489,13 +631,15 @@ input[type="radio"].visually-hidden {
 .catalog-sort {
   display: flex;
   align-items: baseline;
+  flex-grow: 1;
 
-  width: 100%;
   font-size: 12px;
   line-height: 18px;
 }
 
 .catalog-sort fieldset{
+  padding: 0;
+
   border: none;
 }
 
@@ -504,7 +648,6 @@ input[type="radio"].visually-hidden {
 }
 
 .catalog-sort p {
-  padding-left: 15px;
   padding-right: 15px;
   margin: 0;
 
