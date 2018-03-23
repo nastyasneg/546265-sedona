@@ -574,13 +574,15 @@ input[type="radio"].visually-hidden {
   background-position: 0 0;
 }
 
+.filter input[type="checkbox"]:hover + .checkbox-indikator,
+.filter input[type="checkbox"]:focus + .checkbox-indikator {
+
+  border-color: #663d15;
+  outline: thin dotted;
+  outline: 5px auto -webkit-focus-ring-color;
+}
+
 .filter input[type="checkbox"]:checked + .checkbox-indikator {
-  position: absolute;
-  left: 0;
-
-  width: 23px;
-  height: 23px;
-
   background-image: url("../img/icon/checkbox-on.svg");
   background-repeat: no-repeat;
   background-position: 0 0;
