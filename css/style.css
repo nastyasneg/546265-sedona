@@ -61,8 +61,6 @@ input[type="radio"].visually-hidden {
 
   width: 138px;
   height: 69px;
-
-  outline: 3px solid green;
 }
 
 .main-navigation {
@@ -89,8 +87,6 @@ input[type="radio"].visually-hidden {
 
 .site-navigation li {
   width: 20%;
-
-  outline: 3px solid blue;
 }
 
 .site-navigation li:nth-child(4n+1) {
@@ -157,8 +153,6 @@ input[type="radio"].visually-hidden {
 
   background-image: url("../img/welcome-text.png");
   background-repeat: no-repeat;
-
-  outline: 2px solid red;
 }
 
 .intro-title {
@@ -338,6 +332,10 @@ input[type="radio"].visually-hidden {
   color: #ffffff;
 }
 
+.search-form {
+  position: relative;
+}
+
 .search-form p {
   margin: 0;
 
@@ -384,6 +382,10 @@ input[type="radio"].visually-hidden {
   color: rgba(255, 255, 255, 0.3);
 
   background-color: #625147;
+}
+
+.main-map {
+  position: relative;
 }
 
 /* CATALOG page */
@@ -678,7 +680,6 @@ input[type="radio"].visually-hidden {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  width: 100%;
 
   background-color: #ffffff;
   opacity: 0.9;
@@ -722,7 +723,7 @@ input[type="radio"].visually-hidden {
   list-style: none;
 }
 
-.social-button {
+.social-button a {
   display: flex;
   align-items: center;
   justify-content: center;
@@ -732,12 +733,12 @@ input[type="radio"].visually-hidden {
   background-color: #81b3d2;
 }
 
-.social-button:hover,
-.social-button:focus {
+.social-button a:hover,
+.social-button a:focus {
   background-color: #669ec0;
 }
 
-.social-button:active {
+.social-button a:active {
   background-color: #5496bd;
 }
 
@@ -758,18 +759,18 @@ input[type="radio"].visually-hidden {
   color: #000000;
 }
 
-.copyright-logo {
+.footer-copyright a {
   width: 115px;
   height: 41px;
   margin-left: 10px;
 }
 
-.copyright-logo:hover path,
-.copyright-logo:active path {
+.footer-copyright a:hover path,
+.footer-copyright a:focus path {
   fill: #81b3d2;
 }
 
-.copyright-logo:active path {
+.footer-copyright a:active path {
   fill: #bdbbbc;
 }
 
@@ -779,8 +780,9 @@ input[type="radio"].visually-hidden {
   position: absolute;
   left: 0;
   right: 0;
+  z-index: 1;
 
-  display: none;
+  display: ;
 
   width: 570px;
   height: 400px;
