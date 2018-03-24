@@ -139,7 +139,7 @@ input[type="radio"].visually-hidden {
   background-color: #bad4e5;
   background-image: url("../img/background-mountains.jpg");
   background-size: cover;
-  background-position: center bottom;
+  background-position: center 0;
   background-repeat: no-repeat;
 }
 
@@ -901,13 +901,48 @@ input[type="radio"].visually-hidden {
   margin-left: auto;
 }
 
-.item-stars {
+.item-four-stars {
   display: block;
+  margin-left: auto;
+  margin-bottom: 50px;
 
-  color: #81b3d2;
+  width: 89px;
+  height: 18px;
+
+  background-image: url(../img/icon/star.svg);
+  background-repeat: space;
+  background-position: 0 0;
+}
+
+.item-three-stars {
+  display: block;
+  margin-left: auto;
+  margin-bottom: 50px;
+
+  width: 65px;
+  height: 18px;
+
+  background-image: url(../img/icon/star.svg);
+  background-repeat: space;
+  background-position: 0 0;
+}
+
+.item-two-stars {
+  display: block;
+  margin-left: auto;
+  margin-bottom: 50px;
+
+  width: 41px;
+  height: 18px;
+
+  background-image: url(../img/icon/star.svg);
+  background-repeat: space;
+  background-position: 0 0;
 }
 
 .item-rating {
+  padding: 5px 13px;
+
   color: #666666;
 
   background-color: #f2f2f2;
