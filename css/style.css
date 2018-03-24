@@ -41,6 +41,8 @@ input[type="radio"].visually-hidden {
 }
 
 .container {
+  position: relative;
+
   max-width: 1200px;
   margin: 0 auto;
 
@@ -137,7 +139,7 @@ input[type="radio"].visually-hidden {
   background-color: #bad4e5;
   background-image: url("../img/background-mountains.jpg");
   background-size: cover;
-  background-position: center;
+  background-position: center bottom;
   background-repeat: no-repeat;
 }
 
@@ -172,7 +174,9 @@ input[type="radio"].visually-hidden {
 }
 
 .intro-text {
-  padding: 57px 0;
+  padding: 0;
+  padding-top: 63px;
+  padding-bottom: 53px;
   margin: 0;
 
   text-align: center;
@@ -183,7 +187,7 @@ input[type="radio"].visually-hidden {
 /* === FEATURES === */
 
 .features {
-  margin-bottom: 50px;
+  margin-bottom: 55px;
 }
 
 .features-row {
@@ -217,7 +221,7 @@ input[type="radio"].visually-hidden {
 .features-item {
   width: 33%;
   padding-top: 50px;
-  padding-bottom: 50px;
+  padding-bottom: 40px;
   box-sizing: border-box;
 
   text-align: center;
@@ -227,10 +231,14 @@ input[type="radio"].visually-hidden {
   padding-bottom: 55px;
 }
 
+.features-row:nth-child(2) {
+  padding-bottom: 40px;
+}
+
 .features-item h3 {
   width: 150px;
   margin: 0 auto;
-  margin-bottom: 25px;
+  margin-bottom: 20px;
 }
 
 .features-item h4 {
@@ -306,10 +314,6 @@ input[type="radio"].visually-hidden {
   margin: 0 auto;
 }
 
-.features-row:nth-child(2) p {
-  margin-bottom: 30px;
-}
-
 .features-pic {
   width: 67%;
   height: 257px;
@@ -318,10 +322,11 @@ input[type="radio"].visually-hidden {
 }
 
 .features-pic img {
+  display: block;
+
   width: 100%;
   height: auto;
   margin: -10% 0 0 0;
-  align: center;
 }
 
 .special-item {
@@ -892,14 +897,32 @@ input[type="radio"].visually-hidden {
 /* ====== FOOTER ====== */
 
 .main-footer {
+  position: absolute;
+  bottom: 0;
+
   display: flex;
   justify-content: space-between;
   align-items: center;
+  width: 100%;
   padding-top: 20px;
   padding-bottom: 20px;
 
   background-color: #ffffff;
   opacity: 0.9;
+}
+
+.main-footer-inner {
+  position: static;
+  bottom: 0;
+
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+  padding-top: 20px;
+  padding-bottom: 20px;
+
+  background-color: #ffffff;
 }
 
 .hashtag {
