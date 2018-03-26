@@ -655,6 +655,7 @@ input[type="radio"].visually-hidden {
 }
 
 .catalog-result {
+  flex-shrink: 0;
   width: 136px;
   padding-right: 30px;
 
@@ -692,10 +693,12 @@ input[type="radio"].visually-hidden {
 
 .sort-by-category {
   display: flex;
+  flex-wrap: wrap;
 
   padding: 0;
   padding-left: 20px;
   margin: 0;
+  width: 350px;
 
   list-style: none;
 }
@@ -853,6 +856,7 @@ input[type="radio"].visually-hidden {
   position: relative;
 
   display: flex;
+  flex-shrink: 0;
 
   padding: 0;
   padding-top: 29px;
@@ -860,6 +864,8 @@ input[type="radio"].visually-hidden {
 }
 
 .catalog-item-image {
+  flex-shrink: 0;
+
   margin-right: 30px;
 }
 
@@ -882,6 +888,8 @@ input[type="radio"].visually-hidden {
 }
 
 .catalog-item-rating {
+  flex-shrink: 0;
+
   margin-left: auto;
 }
 
@@ -957,8 +965,8 @@ input[type="radio"].visually-hidden {
   justify-content: space-between;
   align-items: center;
   width: 100%;
-  padding-top: 20px;
-  padding-bottom: 20px;
+  padding-top: 15px;
+  padding-bottom: 18px;
 
   background-color: #ffffff;
 }
@@ -1043,7 +1051,7 @@ input[type="radio"].visually-hidden {
 .footer-copyright a {
   width: 115px;
   height: 41px;
-  margin-left: 10px;
+  margin-left: 2%;
 }
 
 .footer-copyright a:hover path,
