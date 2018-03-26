@@ -173,6 +173,7 @@ input[type="radio"].visually-hidden {
 }
 
 .intro-title {
+  margin: 0;
   padding-bottom: 7px;
 
   font-size: 21px;
@@ -736,6 +737,7 @@ input[type="radio"].visually-hidden {
 
 .sort-by-priority {
   display: flex;
+  margin: 0;
   padding: 0;
 
   list-style: none;
@@ -810,6 +812,11 @@ input[type="radio"].visually-hidden {
 }
 
 .catalog-list p {
+  margin: 0;
+}
+
+.catalog-category,
+.catalog-buttons {
   margin: 0;
 }
 
@@ -1000,6 +1007,7 @@ input[type="radio"].visually-hidden {
   flex-wrap: wrap;
   justify-content: center;
   width: 33%;
+  margin: 0;
   padding: 0;
 
   font-size: 21px;
@@ -1038,6 +1046,7 @@ input[type="radio"].visually-hidden {
   display: flex;
   align-items: center;
   justify-content: center;
+  margin: 0;
   width: 33%;
 
   text-align: center;
