@@ -233,7 +233,6 @@ input[type="radio"].visually-hidden {
   min-height: 256px;
 }
 
-
 .features-row:first-child,
 .features-row:nth-child(3) {
   background-color: #81b3d2;
@@ -438,7 +437,7 @@ input[type="radio"].visually-hidden {
   background-color: #809ebf;
   background-image: url("../img/filter-background.jpg");
   background-size: 100% auto;
-  background-position: 0 0;
+  background-position: 50% 15%;
   background-repeat: no-repeat;
 }
 
