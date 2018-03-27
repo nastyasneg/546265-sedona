@@ -482,8 +482,8 @@ input[type="radio"].visually-hidden {
   position: absolute;
   left: 0;
 
-  width: 23px;
-  height: 23px;
+  width: 26px;
+  height: 26px;
 
   cursor: pointer;
 
@@ -492,7 +492,6 @@ input[type="radio"].visually-hidden {
   background-position: 0 0;
 }
 
-.filter input[type="checkbox"]:hover + .checkbox-indikator,
 .filter input[type="checkbox"]:focus + .checkbox-indikator {
 
   border-color: #663d15;
@@ -502,6 +501,18 @@ input[type="radio"].visually-hidden {
 
 .filter input[type="checkbox"]:checked + .checkbox-indikator {
   background-image: url("../img/icon/checkbox-on.svg");
+  background-repeat: no-repeat;
+  background-position: 0 0;
+}
+
+.filter input[type="checkbox"]:disabled + .checkbox-indikator {
+  background-image: url("../img/icon/checkbox-disabled.svg");
+  background-repeat: no-repeat;
+  background-position: 0 0;
+}
+
+.filter input[type="checkbox"]:checked:disabled + .checkbox-indikator {
+  background-image: url("../img/icon/checkbox-checked-disabled.svg");
   background-repeat: no-repeat;
   background-position: 0 0;
 }
@@ -599,7 +610,7 @@ input[type="radio"].visually-hidden {
 }
 
 .value-slider-point:hover {
-  background: #1c4f80;
+  border: 9px solid #ffffff;
 }
 
 .slider-point-min {
@@ -839,15 +850,17 @@ input[type="radio"].visually-hidden {
 
 .catalog-buttons .button {
   display: inline-block;
+  margin-right: 3px;
+  margin-bottom: 5px;
 
   padding: 3px 16px;
 }
 
 .catalog-button-info {
-  widows: 110px;
-
-  margin-right: 3px;
+  width: 110px;
   box-sizing: border-box;
+  overflow: hidden;
+  text-overflow: ellipsis;
 
   font-size: 14px;
   line-height: 21px;
@@ -869,6 +882,8 @@ input[type="radio"].visually-hidden {
 .catalog-button-book {
   width: 142px;
   box-sizing: border-box;
+  overflow: hidden;
+  text-overflow: ellipsis;
 
   font-size: 14px;
   line-height: 21px;
@@ -898,6 +913,10 @@ input[type="radio"].visually-hidden {
   padding-bottom: 25px;
 }
 
+.catalog-item-info {
+  width: 650px;
+}
+
 .catalog-item-image {
   flex-shrink: 0;
 
@@ -909,19 +928,23 @@ input[type="radio"].visually-hidden {
 }
 
 .catalog-item-info .catalog-category {
-  margin-bottom: 13px;
+  margin-bottom: 5px;
 }
 
 .catalog-type {
   display: inline-block;
 
   width: 112px;
+  overflow: hidden;
+  text-overflow: ellipsis;
 }
 
 .catalog-price {
-  display: inline-block;;
+  display: inline-block;
 
   width: 143px;
+  overflow: hidden;
+  text-overflow: ellipsis;
 }
 
 .catalog-item-rating {
@@ -1101,7 +1124,7 @@ input[type="radio"].visually-hidden {
   right: 0;
   z-index: 1;
 
-  display: none;
+  display: block;
 
   width: 570px;
   height: 395px;
@@ -1132,14 +1155,6 @@ input[type="radio"].visually-hidden {
   width: 100%;
 }
 
-.age-category {
-  width: 50%;
-}
-
-.age-category-kids label {
-  margin-left: 50px;
-}
-
 .modal-search-form input {
   position: relative;
 
@@ -1148,6 +1163,8 @@ input[type="radio"].visually-hidden {
   padding: 10px;
   margin-left: auto;
   box-sizing: border-box;
+  overflow: hidden;
+  text-overflow: ellipsis;
 
   font: inherit;
   color: #000000;
@@ -1158,14 +1175,8 @@ input[type="radio"].visually-hidden {
   border: 2px solid transparent;
 }
 
-.age-category p {
-  width: 325px;
-}
-
-.age-category input {
-  width: 115px;
-
-  text-align: center;
+.date-category input {
+  padding-right: 40px;
 }
 
 .modal-search-form input:hover {
@@ -1204,49 +1215,43 @@ input[type="radio"].visually-hidden {
   fill: #81b3d2;
 }
 
-.age-category-adults .button-remove {
-  position: absolute;
-  z-index: 2;
-  left: 180px;
-  top: 200px;
-
-  font-size: 21px;
+.age-category-adults {
+  display: flex;
+  align-items: baseline;
 }
 
-.age-category-adults .button-add {
-  position: absolute;
-  z-index: 2;
-  left: 259px;
-  top: 200px;
+.age-category-item {
+  display: flex;
+  align-items: baseline;
+  width: 122px;
+  height: 38px;
 
-  font-size: 21px;
+  background-color: #f2f2f2;
+
+  outline: 2px solid red;
 }
 
-.age-category-kids .button-remove {
-  position: absolute;
-  z-index: 2;
-  left: 412px;
-  top: 200px;
-
-  font-size: 21px;
+.age-category-kids label{
+  margin-left: auto;
 }
 
-.age-category-kids .button-add {
-  position: absolute;
-  z-index: 2;
-  left: 493px;
-  top: 200px;
+.age-category-item input {
+  text-overflow: clip;
 
-  font-size: 21px;
+  width: 45px;
+
+  text-align: center;
 }
 
 .button-input {
   padding: 0;
   height: 0;
+  width: 38px;
 
   font: inherit;
   color: #a9a9a9;
 
+  background-color: #f2f2f2;
   border: none;
   outline: none;
 }
@@ -1266,6 +1271,8 @@ input[type="radio"].visually-hidden {
   margin-top: 23px;
   padding-top: 15px;
   padding-bottom: 15px;
+  overflow: hidden;
+  text-overflow: ellipsis;
 
   vertical-align: middle;
 

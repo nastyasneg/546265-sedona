@@ -135,17 +135,21 @@
                 </svg>
               </button>
             </p>
-            <p class="age-category age-category-adults">
+            <p class="age-category-adults">
               <label for="adults">Взрослые:</label>
-              <button class="button-input button-remove" type="button">&ndash;</button>
-              <input id="adults" type="text" name="adults" value="" placeholder="2">
-              <button class="button-input button-add" type="button">+</button>
+              <div class="age-category-item">
+                <button class="button-input button-remove" type="button">&ndash;</button>
+                <input id="adults" type="text" name="adults" value="" placeholder="2">
+                <button class="button-input button-add" type="button">+</button>
+              </div>
             </p>
-            <p class="age-category age-category-kids">
+            <p class="age-category-kids">
               <label for="kids">Дети:</label>
-              <button class="button-input button-remove" type="button">&ndash;</button>
-              <input id="kids" type="text" name="kids" value="" placeholder="0">
-              <button class="button-input button-add" type="button">+</button>
+              <div class="age-category-item ">
+                <button class="button-input button-remove" type="button">&ndash;</button>
+                <input id="kids" type="text" name="kids" value="" placeholder="0">
+                <button class="button-input button-add" type="button">+</button>
+              </div>
             </p>
             <button class="button button-search-form" type="submit">Найти</button>
           </form>
