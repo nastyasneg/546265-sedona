@@ -408,12 +408,6 @@ input[type="radio"].visually-hidden {
 
 /* === MAIN-MAP === */
 
-.main-map iframe {
-  position: relative;
-
-  z-index: 2;
-}
-
 .main-map img {
   display: block;
 
@@ -450,18 +444,18 @@ input[type="radio"].visually-hidden {
 
 .filter fieldset {
   padding: 0;
+  margin: 0;
 
   border: none;
 }
 
 .filter fieldset:first-child {
-  width: 210px;
-  margin-right: 37px;
-  flex-shrink: ;
+  width: 255px;
 }
 
 .filter fieldset:nth-child(2) {
-  flex-grow: 1;
+  margin-right: 200px;
+  width: 276px;
 }
 
 .filter fieldset:last-child {
@@ -473,6 +467,10 @@ input[type="radio"].visually-hidden {
 
   font-size: 16px;
   font-weight: bold;
+}
+
+.filter-slider {
+  width: 329px;
 }
 
 .filter-slider legend {
@@ -511,7 +509,7 @@ input[type="radio"].visually-hidden {
 .price-controls {
   position: relative;
 
-  width: 310px;
+  width: 315px;
   height: 35px;
   margin-bottom: 20px;
 
@@ -519,6 +517,11 @@ input[type="radio"].visually-hidden {
 
   border: 2px solid #ffffff;
   border-radius: 2px;
+}
+
+.filter-slider legend,
+.filter-slider>div {
+  margin-left: 11px;
 }
 
 .min-price::after {
@@ -548,9 +551,7 @@ input[type="radio"].visually-hidden {
 .price-controls .min-price,
 .price-controls .max-price {
   width: 90px;
-  padding-left: 65px;
-
-  outline: 2px solid red;
+  padding-left: 63px;
 }
 
 .price-controls input {
@@ -635,7 +636,7 @@ input[type="radio"].visually-hidden {
 .filter-button {
   display: block;
   margin: 0 auto;
-  padding: 6px 35px;
+  padding: 5px 35px;
   width: 133px;
 
   font: inherit;
