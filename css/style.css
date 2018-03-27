@@ -647,8 +647,10 @@ input[type="radio"].visually-hidden {
 .filter-button {
   display: block;
   margin: 0 auto;
-  padding: 5px 35px;
-  width: 133px;
+  padding: 5px 30px;
+  width: 135px;
+  overflow: hidden;
+  text-overflow: ellipsis;
 
   font: inherit;
   color: #ffffff;
@@ -860,7 +862,7 @@ input[type="radio"].visually-hidden {
   margin-right: 3px;
   margin-bottom: 5px;
 
-  padding: 3px 16px;
+  padding: 3px 10px;
 }
 
 .catalog-button-info {
