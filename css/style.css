@@ -408,6 +408,12 @@ input[type="radio"].visually-hidden {
 
 /* === MAIN-MAP === */
 
+.main-map iframe {
+  position: relative;
+
+  z-index: 2;
+}
+
 .main-map img {
   display: block;
 
@@ -1094,7 +1100,7 @@ input[type="radio"].visually-hidden {
   right: 0;
   z-index: 1;
 
-  display: block;
+  display: none;
 
   width: 570px;
   height: 395px;
