@@ -787,10 +787,11 @@ input[type="radio"].visually-hidden {
 }
 
 .catalog-sort input[type="radio"]:hover + svg path {
+
   fill: #000000;
 }
 
-.catalog-sort input[type="radio"]:active + svg path {
+.sort-by-priority path:active {
   fill: #81b3d2;
 }
 
@@ -1142,12 +1143,8 @@ input[type="radio"].visually-hidden {
   font-weight: bold;
 
   background-color: #ffffff;
-}
-
-.modal-search-form {
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: space-between;
+  box-shadow: 5px 0 15px 0 rgba(0, 0, 0, 0.2),
+              -5px 0 15px 0 rgba(0, 0, 0, 0.2);
 }
 
 .modal-search-form p {
@@ -1203,12 +1200,12 @@ input[type="radio"].visually-hidden {
 }
 
 .button-calendar-arrival {
-  right: 65px;
+  right: 57px;
   top: 62px;
 }
 
 .button-calendar-departure {
-  right: 65px;
+  right: 57px;
   top: 130px;
 }
 
@@ -1221,21 +1218,36 @@ input[type="radio"].visually-hidden {
   fill: #81b3d2;
 }
 
-.age-category {
-  outline: 2px solid green;
+.age-category-container {
+  display: flex;
+  margin-bottom: 54px;
 }
 
+.age-category-adults,
+.age-category-kids {
+  display: flex;
+  align-items: baseline;
+}
 
+.age-category-kids {
+  margin-left: auto;
+}
+
+.age-category-adults label {
+  margin-right: 44px;
+}
+
+.age-category-kids label {
+  margin-right: 27px;
+}
 
 .age-category-item {
   display: flex;
   align-items: baseline;
-  width: 122px;
+  width: 114px;
   height: 38px;
 
   background-color: #f2f2f2;
-
-  outline: 2px solid red;
 }
 
 .age-category-kids label{
@@ -1256,6 +1268,7 @@ input[type="radio"].visually-hidden {
   width: 38px;
 
   font: inherit;
+  font-size: 21px;
   color: #a9a9a9;
 
   background-color: #f2f2f2;
@@ -1275,7 +1288,7 @@ input[type="radio"].visually-hidden {
 .button-search-form {
   flex-grow: 1;
 
-  margin-top: 23px;
+  width: 100%;
   padding-top: 15px;
   padding-bottom: 15px;
   overflow: hidden;
