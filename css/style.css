@@ -1221,10 +1221,11 @@ input[type="radio"].visually-hidden {
   fill: #81b3d2;
 }
 
-.age-category-adults {
-  display: flex;
-  align-items: baseline;
+.age-category {
+  outline: 2px solid green;
 }
+
+
 
 .age-category-item {
   display: flex;
