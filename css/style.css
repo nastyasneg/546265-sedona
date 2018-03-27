@@ -743,15 +743,22 @@ input[type="radio"].visually-hidden {
   border-bottom: 1px dotted #81b3d2;
 }
 
-.sort-by-category label:hover,
-.sort-by-category label:focus {
+.catalog-sort input[type="radio"]:focus + label {
+  color: #81b3d2;
+
+  outline: 5px auto -webkit-focus-ring-color;
+}
+
+.catalog-sort input[type="radio"]:hover + label {
   color: #81b3d2;
 }
 
-.sort-by-category label:active {
+.catalog-sort input[type="radio"]:active + label {
   color: #000000;
+}
 
-  border: none;
+.catalog-sort input[type="radio"]:focus + svg {
+  outline: 5px auto -webkit-focus-ring-color;
 }
 
 .sort-item-current label,
@@ -779,12 +786,11 @@ input[type="radio"].visually-hidden {
   fill: #cacaca;
 }
 
-.sort-by-priority path:hover,
-.sort-by-priority path:focus {
+.catalog-sort input[type="radio"]:hover + svg path {
   fill: #000000;
 }
 
-.sort-by-priority path:active {
+.catalog-sort input[type="radio"]:active + svg path {
   fill: #81b3d2;
 }
 
