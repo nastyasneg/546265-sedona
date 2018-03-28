@@ -416,6 +416,20 @@ input[type="radio"].visually-hidden {
   object-fit: cover;
 }
 
+.main-map p {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  z-index: 1;
+
+  margin: 0;
+}
+
+.main-map iframe {
+  position: relative;
+  z-index: 2;
+}
+
 /* ====== CATALOG page ====== */
 
 .site-navigation-current a,
@@ -1001,6 +1015,7 @@ input[type="radio"].visually-hidden {
 .main-footer {
   position: absolute;
   bottom: 0;
+  z-index: 3;
 
   display: flex;
   justify-content: space-between;
@@ -1123,14 +1138,29 @@ input[type="radio"].visually-hidden {
 
 /* ====== MODAL ====== */
 
+/* @keyframes descent {
+  0% {
+    transform: translateY(0px);
+    opacity: 0.1;
+  }
+
+  50% {
+    transform: translateY(10px);
+    opacity: 0.5;
+  }
+
+  100% {
+    transform: translateY(0);
+  }
+} */
+
 .modal {
   position: absolute;
   left: 0;
   right: 0;
-  z-index: 1;
+  z-index: 3;
 
-  display: block;
-
+  display: none;
   width: 570px;
   height: 395px;
   margin: auto;
@@ -1143,6 +1173,12 @@ input[type="radio"].visually-hidden {
   background-color: #ffffff;
   box-shadow: 5px 0 15px 0 rgba(0, 0, 0, 0.2),
               -5px 0 15px 0 rgba(0, 0, 0, 0.2);
+}
+
+.modal-show {
+  display: block;
+
+  transition: height 0.5s 0.5s easy-out;
 }
 
 .modal-search-form p {
