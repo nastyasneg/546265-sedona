@@ -949,7 +949,7 @@ input[type="radio"].visually-hidden {
 }
 
 .catalog-item-info .catalog-category {
-  margin-bottom: 5px;
+  margin-bottom: 10px;
 }
 
 .catalog-type {
@@ -1022,7 +1022,7 @@ input[type="radio"].visually-hidden {
   align-items: center;
   width: 100%;
   padding-top: 34px;
-  padding-bottom: 37px;
+  padding-bottom: 40px;
 
   background-color: #ffffff;
   opacity: 0.9;
@@ -1138,21 +1138,51 @@ input[type="radio"].visually-hidden {
 
 /* ====== MODAL ====== */
 
-/* @keyframes descent {
+@keyframes open {
   0% {
-    transform: translateY(0px);
-    opacity: 0.1;
+    transform: translateY(-40px);
+    opacity: 0;
+  }
+
+  40% {
+    opacity: 0;
   }
 
   50% {
-    transform: translateY(10px);
+    opacity: 0.1;
+  }
+
+  80% {
     opacity: 0.5;
   }
 
   100% {
-    transform: translateY(0);
+    transform: translateX(0);
+    opacity: 0.8;
   }
-} */
+}
+
+@keyframes shake {
+  0%,
+  100% {
+    transform: translateX(0);
+  }
+
+  10%,
+  30%,
+  50%,
+  70%,
+  90% {
+    transform: translateX(-5px);
+  }
+
+  20%,
+  40%,
+  60%,
+  80% {
+    transform: translateX(5px);
+  }
+}
 
 .modal {
   position: absolute;
@@ -1178,7 +1208,11 @@ input[type="radio"].visually-hidden {
 .modal-show {
   display: block;
 
-  transition: height 0.5s 0.5s easy-out;
+  animation: open 0.5s;
+}
+
+.modal-error {
+  animation: shake 0.6s;
 }
 
 .modal-search-form p {
