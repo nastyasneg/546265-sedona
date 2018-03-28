@@ -662,6 +662,7 @@ input[type="radio"].visually-hidden {
   border: 2px solid #ffffff;
   border-radius: 2px;
   cursor: pointer;
+  word-wrap: break-word;
 }
 
 .filter-button:hover,
@@ -686,8 +687,7 @@ input[type="radio"].visually-hidden {
   flex-shrink: 0;
   width: 136px;
   padding-right: 30px;
-  overflow: hidden;
-  text-overflow: ellipsis;
+  word-wrap: break-word;
 
   font-size: 21px;
   line-height: 26px;
@@ -868,8 +868,7 @@ input[type="radio"].visually-hidden {
 .catalog-button-info {
   width: 110px;
   box-sizing: border-box;
-  overflow: hidden;
-  text-overflow: ellipsis;
+  word-wrap: break-word;
 
   font-size: 14px;
   line-height: 21px;
@@ -891,8 +890,7 @@ input[type="radio"].visually-hidden {
 .catalog-button-book {
   width: 142px;
   box-sizing: border-box;
-  overflow: hidden;
-  text-overflow: ellipsis;
+  word-wrap: break-word;
 
   font-size: 14px;
   line-height: 21px;
@@ -944,16 +942,14 @@ input[type="radio"].visually-hidden {
   display: inline-block;
 
   width: 112px;
-  overflow: hidden;
-  text-overflow: ellipsis;
+  word-wrap: break-word;
 }
 
 .catalog-price {
   display: inline-block;
 
   width: 143px;
-  overflow: hidden;
-  text-overflow: ellipsis;
+  word-wrap: break-word;
 }
 
 .catalog-item-rating {
@@ -1293,8 +1289,7 @@ input[type="radio"].visually-hidden {
   width: 100%;
   padding-top: 15px;
   padding-bottom: 15px;
-  overflow: hidden;
-  text-overflow: ellipsis;
+  word-wrap: break-word;
 
   vertical-align: middle;
 
