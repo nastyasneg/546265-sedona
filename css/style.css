@@ -253,7 +253,7 @@ input[type="radio"].visually-hidden {
 }
 
 .features-item h3 {
-  width: 150px;
+  width: 155px;
   margin: 0 auto;
   margin-bottom: 24px;
 }
@@ -587,7 +587,7 @@ input[type="radio"].visually-hidden {
   display: inline-block;
 
   font-size: 14px;
-  line-height: 38px;
+  line-height: 21px;
   vertical-align: top;
 
   cursor: pointer;
@@ -596,11 +596,13 @@ input[type="radio"].visually-hidden {
 .price-controls .min-price,
 .price-controls .max-price {
   width: 90px;
+  height: 32px;
   padding-left: 63px;
 }
 
 .price-controls input {
   width: 50px;
+  height: 30px;
   margin: 0;
 
   color: inherit;
@@ -1356,7 +1358,8 @@ input[type="radio"].visually-hidden {
 
   width: 345px;
   height: 38px;
-  padding: 10px;
+  padding-right: 10px;
+  padding-left: 10px;
   margin-left: auto;
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
@@ -1370,10 +1373,6 @@ input[type="radio"].visually-hidden {
 
   background-color: #f2f2f2;
   border: 2px solid transparent;
-}
-
-.date-category input {
-  padding-right: 40px;
 }
 
 .modal-search-form input:hover {
