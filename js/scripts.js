@@ -12,10 +12,10 @@ var storageAdults = "";
 var storageKids = "";
 
 try {
-storageAdults = localStorage.getItem("ageAdults");
-storageKids = localStorage.getItem("ageKids");
+  storageAdults = localStorage.getItem("ageAdults");
+  storageKids = localStorage.getItem("ageKids");
 } catch (err) {
-isStorageSupport = false;
+    isStorageSupport = false;
 }
 
 link.addEventListener("click", function (evt) {
@@ -35,14 +35,14 @@ link.addEventListener("click", function (evt) {
 
 form.addEventListener("submit", function (evt) {
   if (!dateArrival.value || !dateDeparture.value || !ageAdults.value || !ageKids.value) {
-  evt.preventDefault();
-  popup.classList.add("modal-error");
-} else {
-  if (isStorageSupport) {
-  localStorage.setItem("ageAdults", ageAdults.value);
-  localStorage.setItem("ageKids", ageKids.value);
+    evt.preventDefault();
+    popup.classList.add("modal-error");
+  } else {
+    if (isStorageSupport) {
+      localStorage.setItem("ageAdults", ageAdults.value);
+      localStorage.setItem("ageKids", ageKids.value);
+    }
   }
-}
 });
 
 window.addEventListener("keydown", function (evt) {
