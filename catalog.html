@@ -100,8 +100,8 @@
                 <div class="line">
                   <div class="bar"></div>
                 </div>
-                <div class="value-slider-point slider-point-min"></div>
-                <div class="value-slider-point slider-point-max"></div>
+                <div class="value-slider-point slider-point-min" tabindex="0"></div>
+                <div class="value-slider-point slider-point-max" tabindex="0"></div>
               </div>
               <button class="filter-button" type="submit">Показать</button>
             </fieldset>
@@ -110,47 +110,38 @@
         <section class="sort">
           <h2 class="visually-hidden">Сортировка результатов поиска</h2>
           <span class="catalog-result">Найдено: 3</span>
-          <form class="catalog-sort" action="https://echo.htmlacademy.ru" method="get">
+          <div class="catalog-sort">
             <p>Сортировка:</p>
-            <fieldset>
-              <ul class="sort-by-category">
-                <li class="sort-item-current">
-                  <input id="price-category" class="visually-hidden" type="radio" name="sort-by-category" value="price" checked>
-                  <label for="price-category">По цене</label>
-                </li>
-                <li class="sort-item">
-                  <input id="type-category" class="visually-hidden" type="radio" name="sort-by-category" value="type">
-                  <label for="type-category">По типу</label>
-                </li>
-                <li class="sort-item">
-                  <input id="rating-category" class="visually-hidden" type="radio" name="sort-by-category" value="rating">
-                  <label for="rating-category">По рейтингу</label>
-                </li>
-              </ul>
-            </fieldset>
-            <fieldset>
-              <ul class="sort-by-priority">
-                <li class="sort-up">
-                  <label>
-                    <span class="visually-hidden">По возрастанию</span>
-                    <input class="visually-hidden" type="radio" name="sort-by-priority" value="ascend">
-                    <svg xmlns="http://www.w3.org/2000/svg" width="11" height="10" viewBox="0 0 11 10">
-                      <path fill="#231F20" d="M5.5 0L0 10h11z"/>
-                    </svg>
-                  </label>
-                </li>
-                <li class="sort-down sort-arrow-current">
-                  <label>
-                    <span class="visually-hidden">По убыванию</span>
-                    <input class="visually-hidden" type="radio" name="sort-by-priority" value="descend" checked>
-                    <svg xmlns="http://www.w3.org/2000/svg" width="11" height="10" viewBox="0 0 11 10">
-                      <path fill="#231F20" d="M5.5 10L0 0h11"/>
-                    </svg>
-                  </label>
-                </li>
-              </ul>
-            </fieldset>
-          </form>
+            <ul class="sort-by-category">
+              <li class="sort-item-current">
+                <a href="#">По цене</a>
+              </li>
+              <li class="sort-item">
+                <a href="#">По типу</a>
+              </li>
+              <li class="sort-item">
+                <a href="#">По рейтингу</a>
+              </li>
+            </ul>
+            <ul class="sort-by-priority">
+              <li class="sort-up">
+                <a href="#">
+                  <span class="visually-hidden" >По возрастанию</span>
+                  <svg xmlns="http://www.w3.org/2000/svg" width="11" height="10" viewBox="0 0 11 10">
+                    <path fill="#231F20" d="M5.5 0L0 10h11z"/>
+                  </svg>
+                </a>
+              </li>
+              <li class="sort-down sort-arrow-current">
+                <a href="#">
+                  <span class="visually-hidden" >По убыванию</span>
+                  <svg xmlns="http://www.w3.org/2000/svg" width="11" height="10" viewBox="0 0 11 10">
+                    <path fill="#231F20" d="M5.5 10L0 0h11"/>
+                  </svg>
+                </a>
+              </li>
+            </ul>
+          </div>
         </section>
         <section class="catalog">
           <h2 class="visually-hidden">Результат поиска</h2>

@@ -751,13 +751,7 @@ input[type="radio"].visually-hidden {
   line-height: 18px;
 }
 
-.catalog-sort fieldset {
-  padding: 0;
-
-  border: none;
-}
-
-.catalog-sort fieldset:last-child {
+.catalog-sort .sort-by-priority {
   margin-left: auto;
 }
 
@@ -789,34 +783,25 @@ input[type="radio"].visually-hidden {
   text-align: center;
 }
 
-.sort-by-category label {
+.sort-by-category a {
   color: rgba(0, 0, 0, 0.3);
 
   border-bottom: 1px dotted #81b3d2;
 }
 
-.catalog-sort input[type="radio"]:focus + label {
-  color: #81b3d2;
-
-  outline: 5px auto -webkit-focus-ring-color;
-}
-
-.catalog-sort input[type="radio"]:hover + label {
+.catalog-sort a:hover,
+.catalog-sort a:focus {
   color: #81b3d2;
 }
 
-.catalog-sort input[type="radio"]:active + label {
+.catalog-sort a:active {
   color: #000000;
 }
 
-.catalog-sort input[type="radio"]:focus + svg {
-  outline: 5px auto -webkit-focus-ring-color;
-}
-
-.sort-item-current label,
-.sort-item-current label:hover,
-.sort-item-current label:active,
-.sort-item-current label:focus {
+.sort-item-current a,
+.sort-item-current a:hover,
+.sort-item-current a:active,
+.sort-item-current a:focus {
   color: #81b3d2;
 
   border: none;
@@ -841,8 +826,7 @@ input[type="radio"].visually-hidden {
   fill: #cacaca;
 }
 
-.catalog-sort input[type="radio"]:hover + svg path {
-
+.sort-by-priority path:hover {
   fill: #000000;
 }
 
