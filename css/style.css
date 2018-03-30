@@ -551,6 +551,11 @@ input[type="radio"].visually-hidden {
   background-position: 0 0;
 }
 
+.filter input[type="checkbox"]:disabled ~ span,
+.filter input[type="checkbox"]:checked:disabled ~ span {
+  color: #6a6a6a;
+}
+
 .price-controls {
   position: relative;
 
