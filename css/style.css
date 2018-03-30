@@ -420,6 +420,11 @@ input[type="radio"].visually-hidden {
 
 /* === MAIN-MAP === */
 
+.main-map {
+  width: 100%;
+  height: 597px;
+}
+
 .main-map img {
   display: block;
 
