@@ -517,7 +517,7 @@ input[type="radio"].visually-hidden {
   margin-bottom: 10px;
 }
 
-.filter input[type="checkbox"] + .checkbox-indikator {
+.filter input[type="checkbox"] + .checkbox-indicator {
   position: absolute;
   left: 0;
 
@@ -531,26 +531,26 @@ input[type="radio"].visually-hidden {
   background-position: 0 0;
 }
 
-.filter input[type="checkbox"]:focus + .checkbox-indikator {
+.filter input[type="checkbox"]:focus + .checkbox-indicator {
 
   border-color: #663d15;
   outline: thin dotted;
   outline: 5px auto -webkit-focus-ring-color;
 }
 
-.filter input[type="checkbox"]:checked + .checkbox-indikator {
+.filter input[type="checkbox"]:checked + .checkbox-indicator {
   background-image: url(../img/icon/checkbox-on.svg);
   background-repeat: no-repeat;
   background-position: 0 0;
 }
 
-.filter input[type="checkbox"]:disabled + .checkbox-indikator {
+.filter input[type="checkbox"]:disabled + .checkbox-indicator {
   background-image: url(../img/icon/checkbox-disabled.svg);
   background-repeat: no-repeat;
   background-position: 0 0;
 }
 
-.filter input[type="checkbox"]:checked:disabled + .checkbox-indikator {
+.filter input[type="checkbox"]:checked:disabled + .checkbox-indicator {
   background-image: url(../img/icon/checkbox-checked-disabled.svg);
   background-repeat: no-repeat;
   background-position: 0 0;
